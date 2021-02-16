@@ -2,12 +2,12 @@
 
 Small day project to send me a text alert when Franklin brisket is available on gold belly.
 
-# Assumptions
+## Assumptions
 
 * You are on a mac
 * You have a ruby manager installed
 
-# Installation
+## Installation
 
 1. `git clone https://github.com/TravisSpangle/franklin_alert`
 2. `cd franklin_alert`
@@ -20,7 +20,7 @@ Small day project to send me a text alert when Franklin brisket is available on 
 5. You will want to automate this. Adjust your crontab's frequency. With RBENV I used:
     * `0/10/20/30/40/50 * * * * export PATH=/opt/rbenv/shims:/opt/rbenv/bin:/usr/bin:$PATH; eval "$(rbenv init -)"; cd ~/Desktop/franklin_alert && bundle exec ruby app.rb`
 
-# Cron Errors
+## Cron Errors
 
 With crontab and the newer mac OS's you'll need to adjust some security preferences. Use this stack overflow for the explanation - https://apple.stackexchange.com/a/378558.
 
