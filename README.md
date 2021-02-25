@@ -16,7 +16,7 @@ Small day project to send me a text alert when Franklin brisket is available on 
     * alert_username - gmail email 
     * alert_pword - gmail password 
     * alert_number - your cell number as an [email address](https://20somethingfinance.com/how-to-send-text-messages-sms-via-email-for-free/)
-4. Test run with `bundle exec ruby test.rb` - you should get a text message with the url in your settings.yml
+4. Test run with `bin/test` - you should get a text message with the url in your settings.yml
 5. You will want to automate this. Adjust your crontab's frequency. With RBENV I used:
     * `0/10/20/30/40/50 * * * * export PATH=/opt/rbenv/shims:/opt/rbenv/bin:/usr/bin:$PATH; eval "$(rbenv init -)"; cd ~/Desktop/franklin_alert && bundle exec ruby app.rb`
 
