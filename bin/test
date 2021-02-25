@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require 'bundler'; Bundler.require
+Dir[File.join(File.expand_path('.'), 'lib', '*.rb')].each { |file| require file }
+
+Notifier.alert
