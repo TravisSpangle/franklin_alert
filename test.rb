@@ -1,6 +1,4 @@
 require 'bundler'; Bundler.require
-
-require_relative 'notifier'
-require_relative 'config'
+Dir[File.join(__dir__, 'lib', '*.rb')].each { |file| require file }
 
 Notifier.alert

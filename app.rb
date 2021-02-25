@@ -1,8 +1,5 @@
 require 'bundler'; Bundler.require
-
-require_relative 'submit'
-require_relative 'notifier'
-require_relative 'config'
+Dir[File.join(__dir__, 'lib', '*.rb')].each { |file| require file }
 
 @button = Button::Submit.new
 
